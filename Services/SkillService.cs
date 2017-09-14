@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using SkillsMatrix.Commons;
-using SkillsMatrix.Models;
+using SkillsMatrixApi.Commons;
+using SkillsMatrixApi.Models;
 
-namespace SkillsMatrix.Services
+namespace SkillsMatrixApi.Services
 {
     public class SkillService: BaseService, IEntityService<Skill, int>
     {

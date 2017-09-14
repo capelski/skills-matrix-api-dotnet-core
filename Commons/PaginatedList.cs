@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SkillsMatrix.Commons
+namespace SkillsMatrixApi.Commons
 {
     public class PaginatedList<T>
     {

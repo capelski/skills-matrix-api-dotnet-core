@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using SkillsMatrix.Models;
+using SkillsMatrixApi.Models;
 
-namespace SkillsMatrix.Commons
+namespace SkillsMatrixApi.Commons
 {
     public interface IEntityService<T, TKey>
     {

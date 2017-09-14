@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
-namespace SkillsMatrix.Models
+namespace SkillsMatrixApi.Models
 {
     public class SkillsMatrixContext : DbContext
     {

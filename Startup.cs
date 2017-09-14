@@ -7,13 +7,13 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using SkillsMatrix.Models;
-using SkillsMatrix.Commons;
-using SkillsMatrix.Services;
+using SkillsMatrixApi.Models;
+using SkillsMatrixApi.Commons;
+using SkillsMatrixApi.Services;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql;
 
-namespace SkillsMatrix
+namespace SkillsMatrixApi
 {
     public class Startup
     {

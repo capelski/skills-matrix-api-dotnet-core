@@ -1,9 +1,9 @@
-using SkillsMatrix.Models;
+using SkillsMatrixApi.Models;
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-namespace SkillsMatrix.Commons
+namespace SkillsMatrixApi.Commons
 {
     public class GenericApiController<T, TKey, TService> : Controller
         where TService : IEntityService<T, TKey>

@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using SkillsMatrix.Models;
+using SkillsMatrixApi.Models;
 using System.Collections.Generic;
 using System;
 using System.Linq;
 
-namespace SkillsMatrix.Commons
+namespace SkillsMatrixApi.Commons
 {
     public static class Utils
     {

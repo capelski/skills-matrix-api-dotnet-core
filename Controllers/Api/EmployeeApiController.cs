@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SkillsMatrix.Models;
-using SkillsMatrix.Services;
-using SkillsMatrix.Commons;
+using SkillsMatrixApi.Models;
+using SkillsMatrixApi.Services;
+using SkillsMatrixApi.Commons;
 
-namespace SkillsMatrix.Controllers.Api
+namespace SkillsMatrixApi.Controllers.Api
 {
     [Route("api/employee")]
     public class EmployeeApiController : GenericApiController<Employee, int, IEntityService<Employee, int>>

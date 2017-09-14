@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SkillsMatrix.Models
+namespace SkillsMatrixApi.Models
 {
     public static class DbInitializer
     {

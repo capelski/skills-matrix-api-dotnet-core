@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using SkillsMatrix.Models;
+using SkillsMatrixApi.Models;
 
-namespace SkillsMatrix.Migrations
+namespace SkillsMatrixApi.Migrations
 {
     [DbContext(typeof(SkillsMatrixContext))]
     [Migration("20170710161148_InitialCreate")]
@@ -16,7 +16,7 @@ namespace SkillsMatrix.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.1");
 
-            modelBuilder.Entity("SkillsMatrix.Models.Employee", b =>
+            modelBuilder.Entity("SkillsMatrixApi.Models.Employee", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -28,7 +28,7 @@ namespace SkillsMatrix.Migrations
                     b.ToTable("employee");
                 });
 
-            modelBuilder.Entity("SkillsMatrix.Models.EmployeeSkill", b =>
+            modelBuilder.Entity("SkillsMatrixApi.Models.EmployeeSkill", b =>
                 {
                     b.Property<int>("EmployeeId");
 
@@ -41,7 +41,7 @@ namespace SkillsMatrix.Migrations
                     b.ToTable("employee_skill");
                 });
 
-            modelBuilder.Entity("SkillsMatrix.Models.Skill", b =>
+            modelBuilder.Entity("SkillsMatrixApi.Models.Skill", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -53,14 +53,14 @@ namespace SkillsMatrix.Migrations
                     b.ToTable("skill");
                 });
 
-            modelBuilder.Entity("SkillsMatrix.Models.EmployeeSkill", b =>
+            modelBuilder.Entity("SkillsMatrixApi.Models.EmployeeSkill", b =>
                 {
-                    b.HasOne("SkillsMatrix.Models.Employee", "Employee")
+                    b.HasOne("SkillsMatrixApi.Models.Employee", "Employee")
                         .WithMany("EmployeeSkills")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("SkillsMatrix.Models.Skill", "Skill")
+                    b.HasOne("SkillsMatrixApi.Models.Skill", "Skill")
                         .WithMany("SkillEmployees")
                         .HasForeignKey("SkillId")
                         .OnDelete(DeleteBehavior.Cascade);

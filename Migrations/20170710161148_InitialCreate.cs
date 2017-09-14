@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace SkillsMatrix.Migrations
+namespace SkillsMatrixApi.Migrations
 {
     public partial class InitialCreate : Migration
     {

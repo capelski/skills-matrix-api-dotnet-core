@@ -1,6 +1,6 @@
-using SkillsMatrix.Models;
+using SkillsMatrixApi.Models;
 
-namespace SkillsMatrix.Commons
+namespace SkillsMatrixApi.Commons
 {
     public class BaseService
     {

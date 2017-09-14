@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace SkillsMatrix.Models
+namespace SkillsMatrixApi.Models
 {
     [DataContract]
     public class Employee

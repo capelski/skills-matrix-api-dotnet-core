@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using SkillsMatrix.Commons;
-using SkillsMatrix.Models;
+using SkillsMatrixApi.Commons;
+using SkillsMatrixApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SkillsMatrix.Services
+namespace SkillsMatrixApi.Services
 {
     public class QueryService: BaseService
     {

@@ -1,4 +1,4 @@
-namespace SkillsMatrix.Models
+namespace SkillsMatrixApi.Models
 {
     public class EmployeeSkill
     {
