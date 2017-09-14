@@ -1,0 +1,2 @@
+- Add Swagger
+- Replicate DI and NLayer pattern
