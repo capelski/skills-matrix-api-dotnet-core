@@ -11,7 +11,7 @@ namespace SkillsMatrixApi.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var indexFilePath = "wwwroot/Index.html";
+            var indexFilePath = "wwwroot/index.html";
             if (System.IO.File.Exists(indexFilePath)) {
                 return Content(System.IO.File.ReadAllText(indexFilePath), "text/html");
             }
